@@ -55,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget _buildItem(Article article) {
     // if (e.text.startsWith("BMW")) return null;
     return Padding(
+      key: Key(article.text),
       padding: const EdgeInsets.all(16.0),
       child: ExpansionTile(
         title: Text(article.text, style: new TextStyle(fontSize: 24.0)),
